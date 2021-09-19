@@ -1,11 +1,33 @@
-# jingzhen-
-why not Chinese 
-const electron = require('electron')
-const proc = require('child_process')
+import { Templates } from './interfaces';
 
-// will print something similar to /Users/maf/.../Electron
-console.log(electron)
-
-// spawn Electron
-const child = proc.spawn(electron)
-
+export const SHOW_ME_TEMPLATES: Templates = {
+  'Electron APIs': {
+    App: 'App',
+    AutoUpdater: 'AutoUpdater',
+    BrowserView: 'BrowserView',
+    BrowserWindow: 'BrowserWindow',
+    Clipboard: 'clipboard',
+    ContentTracing: 'ContentTracing',
+    Cookies: 'Cookies',
+    CrashReporter: 'CrashReporter',
+    Debugger: 'Debugger',
+    DesktopCapturer: 'DesktopCapturer',
+    Dialog: 'Dialog',
+    GlobalShortcut: 'GlobalShortcut',
+    IPC: 'IPC',
+    Menu: 'Menu',
+    NativeImage: 'NativeImage',
+    Net: 'Net',
+    Notification: 'Notification',
+    PowerMonitor: 'PowerMonitor',
+    PowerSaveBlocker: 'PowerSaveBlocker',
+    Screen: 'Screen',
+    Session: 'Session',
+    Shell: 'Shell',
+    SystemPreferences: 'systemPreferences',
+    TouchBar: 'TouchBar',
+    Tray: 'Tray',
+    WebContents: 'WebContents',
+    WebFrame: 'WebFrame',
+  },
+};
